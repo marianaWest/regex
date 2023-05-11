@@ -7,3 +7,7 @@
 // Username letters can be lowercase and uppercase.
 
 // Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
+
+let username = "JackOfAllTrades";
+const userCheck = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i;
+let result = userCheck.test(username);
